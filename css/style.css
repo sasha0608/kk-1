@@ -1,0 +1,255 @@
+/* reset */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h4, p{
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* style */
+
+body {
+  background-color: #ffffff;
+  font-family: 'Gilroy';
+}
+/* main html */
+
+header {
+  border-bottom: 1px solid #ffffff;
+}
+
+img {
+  display: block;
+}
+
+/* container */
+header {
+  background-color: #232323;
+}
+
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* nav-menu */
+.logo{
+  display: block;
+}
+
+.nav-menu-item {
+  display: inline-block;
+}
+
+.nav-menu-item > .link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+
+  margin-left: 124px;
+}
+.header {
+  display:flex;
+  padding: 30px 0;
+  align-items: center;
+}
+/* block html */
+/* hero */
+
+.hero {
+  padding: 200px 312px 0 312px;
+  background-color: #232323;
+}
+
+.hero-cont .title {
+  max-width: 636px;
+  margin-bottom: 342px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+/* hero-buttons */
+
+.btn-cont .list {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-cont .button{
+  width: 315px;
+  padding: 35px 0 40px 35px;
+
+
+  background-color: #8D86C9;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: left;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+/* foto */
+.foto{
+  background-color: #ffffff;
+
+  padding: 150px 0;
+}
+
+.fotochki .item {
+  padding: 25px 20px;
+  border: 1px solid rgba(247, 236, 225, 1);
+}
+
+.fotochki .list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* cost */
+.cost {
+  padding: 150px 0;
+  padding-left: 312px;
+
+  background-color: #ffffff;
+}
+
+.costs  .item:not(:last-child){
+  margin-bottom: 31px;
+}
+
+.costs .title {
+  margin: 0;
+  margin-bottom: 75px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+
+  color: #333333;
+}
+
+.costs {
+  max-width: 526px;
+  margin: 0;
+}
+.costs button {
+  display: block;
+  padding: 15px 0;
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 140%;
+
+  color: #ffffff;
+  background-color: #8D86C9;
+
+  border: none;
+  cursor: pointer;
+}
+
+/* coaches */ 
+
+.coaches{
+  background-color: #ffffff;
+}
+
+.trainer .list {
+  display: flex;
+  gap: 24px;
+}
+
+.trainer .item {
+  padding: 0 15px;
+  border: 1px solid rgba(247, 236, 225, 1);
+}
+
+.trainer h4 {
+  margin: 25px 0 15px 0;
+
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+
+  color: #333333;
+}
+
+.trainer p {
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+
+color: #333333;
+}
+
+.trainer .title {
+  margin: 0;
+  margin-bottom: 75px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  color: #333333;
+}
+
+/* footer */
+
+footer{
+  background-color: #F7ECE1;
+}
+.footer {
+  display: flex;
+  padding: 38px 0;
+  align-items: center;
+}
+
+.footer .list {
+  display: flex;
+  gap: 40px;
+
+  margin-left: 104px;
+}
+
+.futer-nav-item {
+  display: inline-block;
+}
+.futer-nav-item > .link {
+  color: #333333;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+.footer p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  opacity: 0.3;
+  color: #333333;
+}
