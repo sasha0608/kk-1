@@ -38,7 +38,6 @@ header {
 .container {
   max-width: 1296px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 /* nav-menu */
 .logo{
@@ -56,6 +55,10 @@ header {
   line-height: 140%;
 }
 
+header {
+  padding: 30px 0;
+}
+
 .nav-menu {
   display: flex;
   gap: 40px;
@@ -64,14 +67,13 @@ header {
 }
 .header {
   display:flex;
-  padding: 30px 0;
   align-items: center;
 }
 /* block html */
 /* hero */
 
 .hero {
-  padding: 200px 312px 0 312px;
+  padding-top: 200px;
   background-color: #232323;
 }
 
@@ -134,7 +136,6 @@ header {
 /* cost */
 .cost {
   padding: 150px 0;
-  padding-left: 312px;
 
   background-color: #ffffff;
 }
@@ -185,11 +186,6 @@ header {
   gap: 24px;
 }
 
-.trainer .item {
-  padding: 0 15px;
-  border: 1px solid rgba(247, 236, 225, 1);
-}
-
 .trainer h4 {
   margin: 25px 0 15px 0;
 
@@ -220,14 +216,20 @@ color: #333333;
   color: #333333;
 }
 
+.trainer img {
+  padding: 0 15px;
+  border: 1px solid rgba(247, 236, 225, 1);
+}
+
 /* footer */
 
 footer{
+  padding: 38px 0;
+
   background-color: #F7ECE1;
 }
 .footer {
   display: flex;
-  padding: 38px 0;
   align-items: center;
 }
 
