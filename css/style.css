@@ -5,12 +5,19 @@ ul {
   padding: 0;
   list-style: none;
 }
-h4, p{
+h4, h1, p{
   margin: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+html{
+  box-sizing: border-box;
+}
+html *, ::after, ::before{
+  box-sizing: inherit;
 }
 
 /* style */
@@ -52,7 +59,7 @@ header {
   color: #ffffff;
   font-weight: 500;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 1.4;
 }
 
 header {
@@ -70,6 +77,73 @@ header {
   align-items: center;
 }
 /* block html */
+
+.headline {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: #232323;
+  color: #ffffff;
+}
+
+.headline .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.4;
+}
+.news{
+  padding-top:80px ;
+  padding-bottom: 120px;
+}
+.news .list{
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.news .item {
+  padding: 30px 40px;
+  outline: 1px solid #F7ECE1;
+  width: 416px;
+}
+.news img{
+  display: block;
+}
+
+.news h4 {
+  margin-bottom: 20px;
+  max-width: 336px;
+
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.news p {
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333333;
+  opacity: 0.5;
+}
+.news .button {
+  padding: 10px 20px;
+  border: none;
+
+  background-color: #8D86C9;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+.news .item:nth-child(2) h4{
+  margin-bottom: 49px;
+}
+
 /* hero */
 
 .hero {
@@ -83,7 +157,7 @@ header {
 
   font-weight: 700;
   font-size: 48px;
-  line-height: 140%;
+  line-height: 1.4;
   color: #FFFFFF;
 }
 
@@ -98,13 +172,14 @@ header {
 .btn-cont .button{
   width: 315px;
   padding: 35px 0 40px 35px;
+  border: none;
 
 
   background-color: #8D86C9;
   color: #ffffff;
   font-weight: 600;
   font-size: 18px;
-  line-height: 140%;
+  line-height: 1.4;
   text-align: left;
 }
 
@@ -112,7 +187,7 @@ header {
   margin-top: 17px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 140%;
+  line-height: 1.4;
 }
 
 /* foto */
@@ -150,7 +225,7 @@ header {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 140%;
+  line-height: 1.4;
 
   color: #333333;
 }
@@ -166,7 +241,7 @@ header {
 
   font-weight: 600;
   font-size: 21px;
-  line-height: 140%;
+  line-height: 1.4;
 
   color: #ffffff;
   background-color: #8D86C9;
@@ -191,7 +266,7 @@ header {
 
   font-weight: 600;
   font-size: 21px;
-  line-height: 140%;
+  line-height: 1.4;
   text-align: center;
 
   color: #333333;
@@ -199,7 +274,7 @@ header {
 
 .trainer p {
   font-size: 14px;
-  line-height: 140%;
+  line-height: 1.4;
   text-align: center;
 
 color: #333333;
@@ -212,7 +287,7 @@ color: #333333;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 140%;
+  line-height: 1.4;
   color: #333333;
 }
 
@@ -247,12 +322,12 @@ footer{
   color: #333333;
   font-weight: 500;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 1.4;
 }
 .footer p {
   font-weight: 500;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 1.4;
   opacity: 0.3;
   color: #333333;
 }
