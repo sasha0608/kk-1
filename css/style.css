@@ -81,7 +81,9 @@ header {
 .headline {
   padding-top: 30px;
   padding-bottom: 60px;
-  background-color: #232323;
+  background:url('../images/23232323.jpg');
+  background-repeat: no-repeat;
+  background-position:bottom;
   color: #ffffff;
 }
 
@@ -144,11 +146,13 @@ header {
   margin-bottom: 49px;
 }
 
+
 /* hero */
 
 .hero {
   padding-top: 200px;
-  background-color: #232323;
+  background:url(/images/Rectangle\ 26\ \(1\).jpg);
+  background-repeat: no-repeat;
 }
 
 .hero-cont .title {
@@ -231,7 +235,7 @@ header {
 }
 
 .costs {
-  max-width: 526px;
+  width: 526px;
   margin: 0;
 }
 .costs button {
@@ -249,7 +253,46 @@ header {
   border: none;
   cursor: pointer;
 }
+.nazva {
+  display: flex;
+}
 
+.image {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  width: 586px;
+  height: 270px;
+
+  background: url('../images/987895679576.jpg');
+}
+
+.image p {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+
+.services {
+  margin-left: 104px;
+}
+
+.services .title {
+  margin-top: 27px;
+  margin-bottom: 75px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.photo {
+  padding: 30px 25px;
+  border: 1px solid #F7ECE1;
+}
 /* coaches */ 
 
 .coaches{
