@@ -88,7 +88,7 @@ header {
 }
 
 .icon {
-  transform: translate(-200%, -50%);
+  transform: translate(-200%, -50%) scale(1);
   transition-duration: 250ms;
   position: absolute;
   top: 50%;
@@ -102,8 +102,8 @@ header {
 }
 
 .nav-menu-item:hover .icon {
-  transform: scale(1.5);
-  transition-duration: 250ms;
+  transform: translate(-200%, -50%) scale(1.5);
+  transition : transform 250ms, opacity 250ms;
 
   opacity: 1;
 }
@@ -113,7 +113,7 @@ header {
 .headline {
   padding-top: 136px;
   padding-bottom: 60px;
-  background:url('../images/23232323.jpg');
+  background:url('../images/background1.jpg');
   background-repeat: no-repeat;
   background-position:bottom;
   color: #ffffff;
@@ -183,7 +183,7 @@ header {
 
 .hero {
   padding-top: 306px;
-  background:url('/images/Rectangle\ 26\ \(1\).jpg');
+  background:url('../images/background2.jpg');
   background-repeat: no-repeat;
 }
 
@@ -320,7 +320,7 @@ header {
   width: 586px;
   height: 270px;
 
-  background: url('../images/987895679576.jpg');
+  background: url('../images/service.jpg');
   background-position:center ;
   background-size:contain ;
 }
