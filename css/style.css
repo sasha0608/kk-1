@@ -38,7 +38,13 @@ img {
 
 /* container */
 header {
-  background-color: #232323;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 30px 0;
+
+  width: 100%;
 }
 
 
@@ -62,13 +68,13 @@ header {
   line-height: 1.4;
 }
 
-header {
-  padding: 30px 0;
-}
+
 
 .nav-menu {
   display: flex;
   gap: 40px;
+
+  position: relative;
 
   margin-left: 124px;
 }
@@ -76,10 +82,36 @@ header {
   display:flex;
   align-items: center;
 }
+
+.nav-menu-item {
+  position: relative;
+}
+
+.icon {
+  transform: translate(-200%, -50%);
+  transition-duration: 250ms;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  
+  width: 10px;
+  height: 10px;
+
+  background-color: #F7ECE1;
+  opacity: 0.2;
+}
+
+.nav-menu-item:hover .icon {
+  transform: scale(1.5);
+  transition-duration: 250ms;
+
+  opacity: 1;
+}
+
 /* block html */
 
 .headline {
-  padding-top: 30px;
+  padding-top: 136px;
   padding-bottom: 60px;
   background:url('../images/23232323.jpg');
   background-repeat: no-repeat;
@@ -150,8 +182,8 @@ header {
 /* hero */
 
 .hero {
-  padding-top: 200px;
-  background:url(/images/Rectangle\ 26\ \(1\).jpg);
+  padding-top: 306px;
+  background:url('/images/Rectangle\ 26\ \(1\).jpg');
   background-repeat: no-repeat;
 }
 
@@ -257,18 +289,47 @@ header {
   display: flex;
 }
 
-.image {
+.top {
   display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 30px;
-  padding-left: 40px;
+  align-items: center;
+
+  position: relative;
+
+  padding-bottom: 75px;
+}
+
+.top .list {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  gap: 15px;
+}
+
+.top .button {
+  display: block;
+  padding: 22.5px;
+  border: none;
+
+  background-color: #8D86C9;
+}
+
+.image {
+  position: relative;
+
   width: 586px;
   height: 270px;
 
   background: url('../images/987895679576.jpg');
+  background-position:center ;
+  background-size:contain ;
 }
 
 .image p {
+  position: absolute;
+  top: 202px;
+  left: 40px;
+
   font-weight: 700;
   font-size: 27px;
   line-height: 1.4;
@@ -280,9 +341,7 @@ header {
 }
 
 .services .title {
-  margin-top: 27px;
-  margin-bottom: 75px;
-
+  margin: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.4;
@@ -320,7 +379,7 @@ header {
   line-height: 1.4;
   text-align: center;
 
-color: #333333;
+  color: #333333;
 }
 
 .trainer .title {
