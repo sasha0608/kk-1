@@ -89,7 +89,7 @@ header {
 
 .icon {
   transform: translate(-200%, -50%) scale(1);
-  transition-duration: 250ms;
+  transition : transform 250ms, opacity 250ms;
   position: absolute;
   top: 50%;
   left: 0;
@@ -103,7 +103,6 @@ header {
 
 .nav-menu-item:hover .icon {
   transform: translate(-200%, -50%) scale(1.5);
-  transition : transform 250ms, opacity 250ms;
 
   opacity: 1;
 }
