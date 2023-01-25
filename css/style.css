@@ -200,10 +200,10 @@ header {
 
 .blue {
   padding: 15px 20px;
-  background-color: rgb(130, 150, 204);
+  background-color: rgba(9, 30, 87, 0.7);
   position: absolute;
   transform: translateY(-110%);
-  transition: transform 200ms;  
+  transition: transform 200ms; 
 
 
   top: 15px;
@@ -215,6 +215,13 @@ header {
 
 .news .item:hover .blue {
   transform: translateY(0);
+}
+
+.blue p {
+  color: #FFFFFF;
+  opacity: 1;
+  font-weight: 600;
+  font-size: 21px;
 }
 
 
