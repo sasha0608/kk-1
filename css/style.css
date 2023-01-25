@@ -25,6 +25,19 @@ html *, ::after, ::before{
 body {
   background-color: #ffffff;
   font-family: 'Gilroy';
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 21px;
 }
 /* main html */
 
@@ -126,7 +139,6 @@ header {
   text-align: center;
   font-weight: 700;
   font-size: 48px;
-  line-height: 1.4;
 }
 .news{
   padding-top:80px ;
@@ -154,7 +166,6 @@ header {
 
   font-weight: 600;
   font-size: 21px;
-  line-height: 1.4;
   color: #333333;
 }
 
@@ -181,6 +192,29 @@ header {
   margin-bottom: 49px;
 }
 
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.blue {
+  padding: 15px 20px;
+  background-color: rgb(169, 169, 223);
+  position: absolute;
+  transform: translateY(-110%);
+  transition: transform 250ms;
+
+  top: 15px;
+  left: 20px;
+
+  width: 296px;
+  height: 210px;
+}
+
+.news .item:hover .blue {
+  transform: translateY(0);
+}
+
 
 /* hero */
 
@@ -190,7 +224,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.hero-cont .title {
+.hero-title {
   max-width: 636px;
   margin-bottom: 342px;
 
@@ -202,13 +236,13 @@ header {
 
 /* hero-buttons */
 
-.btn-cont .list {
+.hero-list {
   display: flex;
   gap: 12px;
   justify-content: center;
 }
 
-.btn-cont .button{
+.hero-list .button{
   width: 315px;
   padding: 35px 0 40px 35px;
   border: none;
@@ -218,7 +252,6 @@ header {
   color: #ffffff;
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.4;
   text-align: left;
 }
 
@@ -226,7 +259,8 @@ header {
   margin-top: 17px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.4;
+
+  margin-top: 17px;
 }
 
 /* foto */
@@ -236,12 +270,12 @@ header {
   padding: 150px 0;
 }
 
-.fotochki .item {
+.foto-list .item {
   padding: 25px 20px;
   border: 1px solid rgba(247, 236, 225, 1);
 }
 
-.fotochki .list {
+.foto-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -264,7 +298,6 @@ header {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.4;
 
   color: #333333;
 }
@@ -288,7 +321,7 @@ header {
   border: none;
   cursor: pointer;
 }
-.nazva {
+.cost .container{
   display: flex;
 }
 
@@ -335,7 +368,6 @@ header {
 
   font-weight: 700;
   font-size: 27px;
-  line-height: 1.4;
   color: #FFFFFF;
 }
 
@@ -347,7 +379,6 @@ header {
   margin: 0;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.4;
   color: #333333;
 }
 
@@ -371,25 +402,11 @@ header {
   top: 50%;
   left: 0;
   transform: translate(calc(-100% + 86px), -50%);
-  z-index: 2;
 }
 
-.text-container p{
-  font-size: 14px;
-  line-height: 1.4;
-  color: #333333;
-
+.text-container > p{
   margin-bottom: 24px;
 }
-
-.text-container .list p{
-  font-size: 14px;
-  line-height: 1.4;
-  color: #333333;
-
-  margin: 0;
-}
-
 
 .text-container .item:not(:last-child){
   margin-bottom: 20px;
@@ -406,20 +423,10 @@ header {
 }
 
 .text-container h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.4;
-  color: #333333;
-
   margin-bottom: 25px;
 }
 
 .text-container h4 {
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 1.4;
-  color: #333333;
-
   margin-bottom: 25px;
 }
 
@@ -431,11 +438,11 @@ header {
   margin-bottom: 35px;
 }
 
-.icon2{
-  transform: translate(-250%, -170%);
+.marker{
+  transform: translateX(-100%);
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 6px;
+  left: -23px;
 
   width: 8px;
   height: 8px;
@@ -450,46 +457,31 @@ header {
 
 .coaches{
   background-color: #ffffff;
-
 }
 
-.trainer .list {
+.trainer-list {
   display: flex;
   gap: 24px;
 }
 
-.trainer h4 {
+.trainer-list h4 {
   margin: 25px 0 15px 0;
 
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 1.4;
   text-align: center;
-
-  color: #333333;
 }
 
-.trainer p {
-  font-size: 14px;
-  line-height: 1.4;
+.trainer-list p {
   text-align: center;
   max-width: 196px;
-
-  color: #333333;
 }
 
-.trainer .title {
-  margin: 0;
+.trainer-title {
   margin-bottom: 75px;
 
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.4;
-  color: #333333;
 }
 
-.trainer img {
+.trainer-list img {
   padding: 0 15px;
   border: 1px solid rgba(247, 236, 225, 1);
 }
@@ -520,12 +512,15 @@ footer{
   color: #333333;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
+}
+
+.futer-nav-item:hover .link{
+  cursor: pointer;
+  text-decoration: underline;
 }
 .footer p {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
   opacity: 0.3;
   color: #333333;
 }
