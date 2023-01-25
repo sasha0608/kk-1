@@ -5,7 +5,7 @@ ul {
   padding: 0;
   list-style: none;
 }
-h4, h1, p{
+h4, h1, h2, p{
   margin: 0;
 }
 
@@ -34,6 +34,10 @@ header {
 
 img {
   display: block;
+}
+
+.button {
+  cursor: pointer;
 }
 
 /* container */
@@ -89,7 +93,7 @@ header {
 
 .icon {
   transform: translate(-200%, -50%) scale(1);
-  transition : transform 250ms, opacity 250ms;
+  transition : transform 200ms, opacity 200ms;
   position: absolute;
   top: 50%;
   left: 0;
@@ -294,7 +298,7 @@ header {
 
   position: relative;
 
-  padding-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 .top .list {
@@ -351,10 +355,102 @@ header {
   padding: 30px 25px;
   border: 1px solid #F7ECE1;
 }
+
+/* sport */
+
+.sport-club {
+  padding-bottom: 150px;
+}
+
+.sport-club .container {
+  position: relative;
+}
+
+.sport-club img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(calc(-100% + 86px), -50%);
+  z-index: 2;
+}
+
+.text-container p{
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333333;
+
+  margin-bottom: 24px;
+}
+
+.text-container .list p{
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333333;
+
+  margin: 0;
+}
+
+
+.text-container .item:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.text-container {
+  position: relative;
+  padding: 70px 60px 84px 146px;
+  max-width: 636px;
+  margin-right: auto;
+  margin-left: 862px;
+
+  background-color: #F7ECE1;
+}
+
+.text-container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4;
+  color: #333333;
+
+  margin-bottom: 25px;
+}
+
+.text-container h4 {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.4;
+  color: #333333;
+
+  margin-bottom: 25px;
+}
+
+.text-container span {
+  margin-bottom: 24px;
+}
+
+.abzac{
+  margin-bottom: 35px;
+}
+
+.icon2{
+  transform: translate(-200%, -170%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #8D86C9;
+}
+
+.sport-club .item {
+  position: relative;
+}
 /* coaches */ 
 
 .coaches{
   background-color: #ffffff;
+
 }
 
 .trainer .list {
@@ -377,6 +473,7 @@ header {
   font-size: 14px;
   line-height: 1.4;
   text-align: center;
+  max-width: 196px;
 
   color: #333333;
 }
