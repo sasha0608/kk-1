@@ -200,7 +200,7 @@ header {
 
 .blue {
   padding: 15px 20px;
-  background-color: rgb(169, 169, 223);
+  background-color: rgb(130, 150, 204);
   position: absolute;
   transform: translateY(-110%);
   transition: transform 200ms;  
