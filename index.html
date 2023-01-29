@@ -17,7 +17,9 @@
   <body>
     <header>
       <div class="container header">
-        <img src="./images/logo.png" alt="logo" class="logo" />
+        <a href=""><svg class="logo">
+          <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+        </svg></a>
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-menu-item">
@@ -25,11 +27,11 @@
               <div class="icon"></div>
             </li>
             <li class="nav-menu-item">
-              <a href="./block.html" class="link">Про клуб</a>
+              <a href="./about-club.html" class="link">Про клуб</a>
               <div class="icon"></div>
             </li>
             <li class="nav-menu-item">
-              <a href="" class="link">Турніри</a>
+              <a href="./block.html" class="link">Новини</a>
               <div class="icon"></div>
             </li>
             <li class="nav-menu-item">
@@ -53,59 +55,89 @@
               <div class="icon"></div>
             </li>
           </ul>
+          <ul class="list-svg">
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-wk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-cont">
-          <h1 class="title">
+        <div class="container">
+          <h1 class="hero-title">
             Петербурзький тенісний клуб імені М. А. Песечникова
           </h1>
-          <div class="btn-cont">
-            <ul class="list">
+          <div class="video">
+            <button class="btn" type="button">
+              <svg class="svg">
+                <use href="./images/svg/symbol-defs.svg#icon-play"></use>
+              </svg>
+            </button>
+            <p>Подивіться відео про наш клуб</p>
+          </div>
+            <ul class="hero-list">
               <li class="item">
                 <button class="button" type="button">
-                  Послуги<br /><span class="text">Аренда корту</span>
+                  Послуги<p class="text">Аренда корту</p>
                 </button>
               </li>
               <li class="item">
                 <button class="button" type="button">
-                  Послуги<br /><span class="text">Дитячий теніс</span>
+                  Послуги<p class="text">Дитячий теніс</p>
                 </button>
               </li>
               <li class="item">
                 <button class="button" type="button">
-                  Послуги<br /><span class="text">Збір команд</span>
+                  Послуги<p class="text">Збір команд</p>
                 </button>
               </li>
               <li class="item">
                 <button class="button" type="button">
-                  Послуги<br /><span class="text">Розклад</span>
+                  Послуги<p class="text">Розклад</p>
                 </button>
               </li>
             </ul>
-          </div>
         </div>
       </section>
       <section class="foto">
-        <div class="container fotochki">
-          <ul class="list">
+        <div class="container">
+          <ul class="foto-list">
             <li class="item">
-              <img src="./images/card1.jpg" alt="" width="376px" />
+              <div class="fototext1">
+                <h3>5 летних <br>
+                  грунтовых кортов</h3>
+              </div>
             </li>
             <li class="item">
-              <img src="./images/card2.jpg" alt="" width="376px" />
+              <div class="fototext2">
+                <h3>Зал с покрытием “Искусственная трава”</h3>
+              </div>
             </li>
             <li class="item">
-              <img src="./images/card3.jpg" alt="" width="376px" />
+              <div class="fototext3">
+                <h3>Зал с покрытием <br>
+                  “Хард”</h3>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="sport-club">
-        <div class="text-container">
-          <img src="./images/photo.jpg" alt="fotka" width="526px" />
+        <div class="text-container container">
+          <img src="./images/photo.jpg" alt="fotka" width="526px" height="514px"/>
           <h2 class="title">Спортивний клуб</h2>
           <p>
             Imperdiet lorem ipsum, pulvinar aliquet sit ultricies in sit turpis.
@@ -124,38 +156,54 @@
                 Euismod diam, vel venenatis bibendum sodales sem hendrerit
                 vulputate sagittis.
               </p>
-              <div class="icon2"></div>
+              <div class="marker"></div>
             </li>
             <li class="item">
               <p>
                 Nisl senectus sed malesuada donec. Interdum malesuada bibendum
                 imperdiet elementum auctor vitae in.
               </p>
-              <div class="icon2"></div>
+              <div class="marker"></div>
             </li>
             <li class="item">
               <p>
                 Quam purus ornare dictum pharetra. Sed viverra tellus
                 sollicitudin urna, sagittis.
               </p>
-              <div class="icon2"></div>
+              <div class="marker"></div>
             </li>
             <li class="item">
               <p>
                 Scelerisque urna senectus commodo, nam. Donec nibh tempus
                 imperdiet nisi, tincidunt mus egestas nisl nullam.
               </p>
-              <div class="icon2"></div>
+              <div class="marker"></div>
             </li>
           </ul>
         </div>
       </section>
       <setion class="coaches">
-        <div class="container trainer">
-          <h2 class="title">Тренерський склад</h2>
-          <ul class="list">
+        <div class="container">
+          <h2 class="trainer-title">Тренерський склад</h2>
+          <ul class="list-svg-btn">
             <li class="item">
-              <img src="./images/coach1.jpg" alt="coach" width="166px" />
+              <button class="button-svg" type="button">
+                <svg class="svg-btn">
+                  <use href="./images/svg/symbol-defs.svg#icon-row-left"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="item">
+              <button class="button-svg" type="button">
+                <svg class="svg-btn">
+                  <use href="./images/svg/symbol-defs.svg#icon-row-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="trainer-list">
+            <li class="item">
+              <div class="img"><img src="./images/coach1.jpg" alt="coach" width="166px" /></div>
               <h4>
                 Pulvinar <br />
                 aliquam
@@ -163,7 +211,7 @@
               <p>Arcu elit massa amet turpis vel consequat pellentesque sit.</p>
             </li>
             <li class="item">
-              <img src="./images/coach2.jpg" alt="coach" width="166px" />
+              <div class="img"><img src="./images/coach2.jpg" alt="coach" width="166px" /></div>
               <h4>
                 Pretium <br />
                 odio
@@ -174,7 +222,7 @@
               </p>
             </li>
             <li class="item">
-              <img src="./images/coach3.jpg" alt="coach" width="166px" />
+              <div class="img"><img src="./images/coach3.jpg" alt="coach" width="166px" /></div>
               <h4>
                 Aliquet <br />
                 consectetur
@@ -182,7 +230,7 @@
               <p>Id sapien sed nibh fermentum massa posuere ipsum. Diam in.</p>
             </li>
             <li class="item">
-              <img src="./images/coach4.jpg" alt="coach" width="166px" />
+              <div class="img"><img src="./images/coach4.jpg" alt="coach" width="166px" /></div>
               <h4>
                 Blandit <br />
                 augue
@@ -193,7 +241,7 @@
               </p>
             </li>
             <li class="item">
-              <img src="./images/coach5.jpg" alt="coach" width="166px" />
+              <div class="img"><img src="./images/coach5.jpg" alt="coach" width="166px" /></div>
               <h4>
                 Lorem <br />
                 lacus
@@ -204,7 +252,7 @@
               </p>
             </li>
             <li class="item">
-              <img src="./images/coach6.jpg" alt="coach" width="166px" />
+              <div class="img"><img src="./images/coach6.jpg" alt="coach" width="166px" /></div>
               <h4>
                 Sed <br />
                 erat
@@ -238,12 +286,20 @@
           <div class="services">
             <div class="top">
               <h2 class="title">Послуги</h2>
-              <ul class="list">
+              <ul class="list-svg-btn">
                 <li class="item">
-                  <button class="button" type="button"></button>
+                  <button class="button-svg" type="button">
+                    <svg class="svg-btn">
+                      <use href="./images/svg/symbol-defs.svg#icon-row-left"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="item">
-                  <button class="button" type="button"></button>
+                  <button class="button-svg" type="button">
+                    <svg class="svg-btn">
+                      <use href="./images/svg/symbol-defs.svg#icon-row-right"></use>
+                    </svg>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -260,9 +316,9 @@
       <div class="container footer">
         <p>2022 © Всі права захищені.</p>
         <ul class="list">
-          <li class="futer-nav-item"><a href="" class="link">Головна</a></li>
-          <li class="futer-nav-item"><a href="" class="link">Про клуб</a></li>
-          <li class="futer-nav-item"><a href="" class="link">Турніри</a></li>
+          <li class="futer-nav-item"><a href="./index.html" class="link">Головна</a></li>
+          <li class="futer-nav-item"><a href="./about-club.html" class="link">Про клуб</a></li>
+          <li class="futer-nav-item"><a href="./block.html" class="link">Новини</a></li>
           <li class="futer-nav-item"><a href="" class="link">Послуги</a></li>
           <li class="futer-nav-item">
             <a href="" class="link">Дитячий теніс</a>
@@ -271,6 +327,29 @@
           <li class="futer-nav-item"><a href="" class="link">Ціни</a></li>
           <li class="futer-nav-item"><a href="" class="link">Контакти</a></li>
         </ul>
+        <ul class="list-svg">
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-wk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
       </div>
     </footer>
   </body>

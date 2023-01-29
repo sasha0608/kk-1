@@ -17,14 +17,16 @@
   <body>
     <header>
       <div class="container header">
-        <img src="./images/logo.png" alt="logo" class="logo" />
+        <a href=""><svg class="logo">
+          <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+        </svg></a>
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-menu-item"><a href="./index.html" class="link">Головна</a>
               <div class="icon"></div></li>
-            <li class="nav-menu-item"><a href="" class="link active">Про клуб</a>
+            <li class="nav-menu-item"><a href="./about-club.html" class="link active">Про клуб</a>
               <div class="icon"></div></li>
-            <li class="nav-menu-item"><a href="" class="link">Турніри</a>
+            <li class="nav-menu-item"><a href="./block.html" class="link">Новини</a>
               <div class="icon"></div></li>
             <li class="nav-menu-item"><a href="" class="link">Послуги</a>
               <div class="icon"></div></li>
@@ -37,6 +39,22 @@
             <li class="nav-menu-item"><a href="" class="link">Контакти</a>
               <div class="icon"></div></li>
           </ul>
+          <ul class="list-svg">
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-wk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -44,72 +62,103 @@
       <div class="headline" >
       <h1 class="title">Новини</h1>
       </div>
-      <div class="news container">
-        
-        <ul class="list">
-          <li class="item">
-            <img src="./images/news1.jpg" alt="" width="336px" />
-              <p>22 липня 2022 року</p> 
-              <h4>
-                Consequat consequat augue quis urna
-                arcu scelerisque ac montes, sed. Arcu orci quam lectus orci in.
-              </h4>
-            <button class="button" type="button">Детальніше</button>
-          </li>
-          <li class="item">
-            <img src="./images/news2.jpg" alt="" width="336px" />
-              <p>4 квітня 2022 року</p> 
-              <h4>
-                Suspendisse orci fermentum congue
-                enim risus velit neque. Mi.
-              </h4>
-            <button class="button" type="button">Детальніше</button>
-          </li>
-          <li class="item">
-            <img src="./images/news3.jpg" alt="" width="336px" />
-              <p>30 листопада 2021 року</p> 
-              <h4>
-                Interdum proin amet nibh tortor
-                sed vulputate mattis. Ridiculus porta ipsum neque ut vel vitae et.
-              </h4>
-            <button class="button" type="button">Детальніше</button>
-          </li>
-          <li class="item">
-            <img src="./images/news4.jpg" alt="" width="336px" />
-              <p>22 липня 2022 року</p> 
-              <h4>
-                Nisl tempor vel tempor adipiscing
-                id nulla magnis ut ultrices. Malesuada metus et in blandit.
-              </h4>
-            <button class="button" type="button">Детальніше</button>
-          </li>
-          <li class="item">
-            <img src="./images/news5.jpg" alt="" width="336px" />
-              <p>22 липня 2022 року</p>
-              <h4>
-                Libero fermentum pretium sed orci
-                nunc, sagittis mollis lacus dolor. Tincidunt et enim sed ac
-                faucibus.
-              </h4>
-            <button class="button" type="button">Детальніше</button>
-          </li>
-          <li class="item">
-            <img src="./images/news6.jpg" alt="" width="336px"/>
-              <p>22 липня 2022 року</p>
-              <h4>
-                Netus hendrerit tortor laoreet duis
-                proin nulla faucibus ultricies. Et urna fringilla nunc, metus nec.
-              </h4>
-            <button class="button">Детальніше</button>
-          </li>
-        </ul>
-      </div>
+      <section class="news">
+        <div class="container">
+          <ul class="list">
+            <li class="item">
+              <div class="overlay">
+                <img src="./images/news1.jpg" alt="" width="336px" />
+                <div class="blue">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus quisquam mollitia!</p>
+                </div>
+              </div>
+                <p>22 липня 2022 року</p> 
+                <h4>
+                  Consequat consequat augue quis urna
+                  arcu scelerisque ac montes, sed. Arcu orci quam lectus orci in.
+                </h4>
+              <button class="button" type="button">Детальніше</button>
+            </li>
+            <li class="item">
+              <div class="overlay">
+                <img src="./images/news2.jpg" alt="" width="336px" />
+                <div class="blue">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus quisquam mollitia!</p>
+                </div>
+              </div>
+                <p>4 квітня 2022 року</p> 
+                <h4>
+                  Suspendisse orci fermentum congue
+                  enim risus velit neque. Mi.
+                </h4>
+              <button class="button" type="button">Детальніше</button>
+            </li>
+            <li class="item">
+              <div class="overlay">
+                <img src="./images/news3.jpg" alt="" width="336px" />
+                <div class="blue">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus quisquam mollitia!</p>
+                </div>
+              </div>
+                <p>30 листопада 2021 року</p> 
+                <h4>
+                  Interdum proin amet nibh tortor
+                  sed vulputate mattis. Ridiculus porta ipsum neque ut vel vitae et.
+                </h4>
+              <button class="button" type="button">Детальніше</button>
+            </li>
+            <li class="item">
+              <div class="overlay">
+                <img src="./images/news4.jpg" alt="" width="336px" />
+                <div class="blue">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus quisquam mollitia!</p>
+                </div>
+              </div>
+                <p>22 липня 2022 року</p> 
+                <h4>
+                  Nisl tempor vel tempor adipiscing
+                  id nulla magnis ut ultrices. Malesuada metus et in blandit.
+                </h4>
+              <button class="button" type="button">Детальніше</button>
+            </li>
+            <li class="item">
+              <div class="overlay">
+                <img src="./images/news5.jpg" alt="" width="336px" />
+                <div class="blue">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus quisquam mollitia!</p>
+                </div>
+              </div>
+                <p>22 липня 2022 року</p>
+                <h4>
+                  Libero fermentum pretium sed orci
+                  nunc, sagittis mollis lacus dolor. Tincidunt et enim sed ac
+                  faucibus.
+                </h4>
+              <button class="button" type="button">Детальніше</button>
+            </li>
+            <li class="item">
+              <div class="overlay">
+                <img src="./images/news6.jpg" alt="" width="336px" />
+                <div class="blue">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus quisquam mollitia!</p>
+                </div>
+              </div>
+                <p>22 липня 2022 року</p>
+                <h4>
+                  Netus hendrerit tortor laoreet duis
+                  proin nulla faucibus ultricies. Et urna fringilla nunc, metus nec.
+                </h4>
+              <button class="button">Детальніше</button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container footer">
         <p>2022 © Всі права захищені.</p>
         <ul class="list">
-          <li class="futer-nav-item"><a href="" class="link">Головна</a></li>
+          <li class="futer-nav-item"><a href="./index.html" class="link">Головна</a></li>
           <li class="futer-nav-item"><a href="" class="link">Про клуб</a></li>
           <li class="futer-nav-item"><a href="" class="link">Турніри</a></li>
           <li class="futer-nav-item"><a href="" class="link">Послуги</a></li>
@@ -119,6 +168,29 @@
           <li class="futer-nav-item"><a href="" class="link">Галерея</a></li>
           <li class="futer-nav-item"><a href="" class="link">Ціни</a></li>
           <li class="futer-nav-item"><a href="" class="link">Контакти</a></li>
+        </ul>
+        <ul class="list-svg">
+          <li class="item">
+            <a href="">
+              <svg class="svg">
+                <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="">
+              <svg class="svg">
+                <use href="./images/svg/symbol-defs.svg#icon-wk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="">
+              <svg class="svg">
+                <use href="./images/svg/symbol-defs.svg#icon-tg"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
