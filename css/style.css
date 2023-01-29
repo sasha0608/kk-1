@@ -693,6 +693,23 @@ footer{
   margin-left: 105px;
 }
 
+/* about club */
+
+.headline-club{
+  padding-top: 136px;
+  padding-bottom: 60px;
+  background:url('../images/background3.jpg');
+  background-repeat: no-repeat;
+  background-position:bottom;
+  color: #ffffff;
+}
+
+.headline-club .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+}
+
 
 
 
