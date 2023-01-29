@@ -343,13 +343,12 @@ header .svg {
 
 .hero-list .button::after {
   content: '';
-  display: block;
   width: 20px;
   height: 20px;
   background-image: url("../images/svg/icon-icon.svg");
   position: absolute;
   top: 70px;
-  left: 260px;
+  right: 35px;
   
 }
 
@@ -443,7 +442,6 @@ header .svg {
   margin: 0;
 }
 .costs button {
-  display: block;
   padding: 15px 0 15px 30px;
   width: 100%;
   position: relative;
@@ -461,7 +459,6 @@ header .svg {
 
 .cost .button::after {
   content: '';
-  display: block;
   width: 30px;
   height: 30px;
   transform: rotate(180deg);
@@ -489,14 +486,19 @@ header .svg {
 
 .button-svg {
   display: block;
+  position: relative;
   width: 45px;
   height: 45px;
   border: none;
+  padding: 0;
 
   background-color: #8D86C9;
 }
 
 .svg-btn {
+  position: absolute;
+  top: 7px;
+  left: 7px;
   display: block;
   width: 31px;
   height: 31px;
@@ -505,8 +507,8 @@ header .svg {
 .image {
   position: relative;
 
-  width: 586px;
-  height: 270px;
+  width: 584px;
+  height: 268px;
 
   background: url('../images/service.jpg');
   background-position:center ;
@@ -591,7 +593,8 @@ header .svg {
   margin-bottom: 35px;
 }
 
-.marker{
+.text-container .list p::before{
+  content: '';
   transform: translateX(-100%);
   position: absolute;
   top: 6px;
@@ -629,7 +632,6 @@ header .svg {
 
 .trainer-list p {
   text-align: center;
-  max-width: 196px;
 }
 
 .trainer-title {
@@ -719,7 +721,7 @@ footer{
 
 .corts .btn {
   padding: 10px 25px;
-  border: none;
+  border: transparent;
 
   background-color: #8D86C9;
   font-weight: 600;
@@ -752,6 +754,16 @@ footer{
 .corts .container {
   position: relative;
 }
+
+/* about */
+
+.about-container {
+  background-color: #F7ECE1;
+  max-width: 856px;
+  padding: 70px 60px 93px 146px;
+}
+
+
 
 
 
