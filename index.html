@@ -17,7 +17,9 @@
   <body>
     <header>
       <div class="container header">
-        <a href=""><img src="./images/logo.png" alt="logo" class="logo" /></a>
+        <a href=""><svg class="logo">
+          <use href="./images/svg/symbol-defs.svg#icon-logo"></use>
+        </svg></a>
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-menu-item">
@@ -114,13 +116,21 @@
         <div class="container">
           <ul class="foto-list">
             <li class="item">
-              <img src="./images/card1.jpg" alt="card" width="374px"  height="448px" />
+              <div class="fototext1">
+                <h3>5 летних <br>
+                  грунтовых кортов</h3>
+              </div>
             </li>
             <li class="item">
-              <img src="./images/card2.jpg" alt="card" width="374px" height="448px" />
+              <div class="fototext2">
+                <h3>Зал с покрытием “Искусственная трава”</h3>
+              </div>
             </li>
             <li class="item">
-              <img src="./images/card3.jpg" alt="card" width="374px" height="448px" />
+              <div class="fototext3">
+                <h3>Зал с покрытием <br>
+                  “Хард”</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -175,6 +185,22 @@
       <setion class="coaches">
         <div class="container">
           <h2 class="trainer-title">Тренерський склад</h2>
+          <ul class="list-svg-btn">
+            <li class="item">
+              <button class="button-svg" type="button">
+                <svg class="svg-btn">
+                  <use href="./images/svg/symbol-defs.svg#icon-row-left"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="item">
+              <button class="button-svg" type="button">
+                <svg class="svg-btn">
+                  <use href="./images/svg/symbol-defs.svg#icon-row-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
           <ul class="trainer-list">
             <li class="item">
               <div class="img"><img src="./images/coach1.jpg" alt="coach" width="166px" /></div>
@@ -260,12 +286,20 @@
           <div class="services">
             <div class="top">
               <h2 class="title">Послуги</h2>
-              <ul class="list">
+              <ul class="list-svg-btn">
                 <li class="item">
-                  <button class="button" type="button"></button>
+                  <button class="button-svg" type="button">
+                    <svg class="svg-btn">
+                      <use href="./images/svg/symbol-defs.svg#icon-row-left"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="item">
-                  <button class="button" type="button"></button>
+                  <button class="button-svg" type="button">
+                    <svg class="svg-btn">
+                      <use href="./images/svg/symbol-defs.svg#icon-row-right"></use>
+                    </svg>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -293,6 +327,29 @@
           <li class="futer-nav-item"><a href="" class="link">Ціни</a></li>
           <li class="futer-nav-item"><a href="" class="link">Контакти</a></li>
         </ul>
+        <ul class="list-svg">
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-wk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="svg">
+                  <use href="./images/svg/symbol-defs.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
       </div>
     </footer>
   </body>

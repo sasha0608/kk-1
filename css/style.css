@@ -5,7 +5,7 @@ ul {
   padding: 0;
   list-style: none;
 }
-h4, h1, h2, p{
+h4, h1, h2, h3, p{
   margin: 0;
 }
 
@@ -73,6 +73,8 @@ header {
 /* nav-menu */
 .logo{
   display: block;
+  width: 153px;
+  height: 46px;
 }
 
 .nav-menu-item {
@@ -303,7 +305,7 @@ header .svg {
 
 }
 
-.hero p {
+.video p {
   max-width: 158px;
   font-weight: 600;
   font-size: 18px;
@@ -329,6 +331,7 @@ header .svg {
   width: 315px;
   padding: 35px 0 40px 35px;
   border: none;
+  position: relative;
 
 
   background-color: #8D86C9;
@@ -343,8 +346,11 @@ header .svg {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url("../images/svg/symbol-defs.svg#icon-icon");
-  background-color: #333333;
+  background-image: url("../images/svg/icon-icon.svg");
+  position: absolute;
+  top: 70px;
+  left: 260px;
+  
 }
 
 .text {
@@ -373,6 +379,44 @@ header .svg {
   gap: 24px;
 }
 
+.fototext1 {
+  position: relative;
+  width: 374px;
+  height: 448px;
+  background-image: url('../images/card1.jpg');
+}
+
+.fototext2 {
+  position: relative;
+  width: 374px;
+  height: 448px;
+  background-image: url('../images/card2.jpg');
+}
+
+.fototext3 {
+  position: relative;
+  width: 374px;
+  height: 448px;
+  background-image: url('../images/card3.jpg');
+}
+
+.foto-list h3 {
+  font-weight: 700;
+  font-size: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+
+  bottom: 40px;
+  left: 75px;
+}
+
+.fototext2 h3{
+  left: 0px;
+}
+
+
+
 /* cost */
 .cost {
   padding: 150px 0;
@@ -400,8 +444,10 @@ header .svg {
 }
 .costs button {
   display: block;
-  padding: 15px 0;
+  padding: 15px 0 15px 30px;
   width: 100%;
+  position: relative;
+  text-align: start;
 
   font-weight: 600;
   font-size: 21px;
@@ -411,8 +457,20 @@ header .svg {
   background-color: #8D86C9;
 
   border: none;
-  cursor: pointer;
 }
+
+.cost .button::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  background-image: url("../images/svg/left.svg");
+}
+
 .cost .container{
   display: flex;
 }
@@ -421,7 +479,7 @@ header .svg {
   margin-bottom: 75px;
 }
 
-.top .list {
+.list-svg-btn {
   display: flex;
   position: absolute;
   right: 0;
@@ -429,12 +487,19 @@ header .svg {
   gap: 15px;
 }
 
-.top .button {
+.button-svg {
   display: block;
-  padding: 22.5px;
+  width: 45px;
+  height: 45px;
   border: none;
 
   background-color: #8D86C9;
+}
+
+.svg-btn {
+  display: block;
+  width: 31px;
+  height: 31px;
 }
 
 .image {
@@ -547,6 +612,10 @@ header .svg {
   background-color: #ffffff;
 }
 
+.coaches .container{
+  position: relative;
+}
+
 .trainer-list {
   display: flex;
   gap: 24px;
@@ -612,5 +681,18 @@ footer{
   opacity: 0.3;
   color: #333333;
 }
+
+.footer .svg{
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: #8D86C9;
+}
+
+.footer .list-svg {
+  margin-left: 105px;
+}
+
+
 
 
