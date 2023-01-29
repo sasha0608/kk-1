@@ -47,9 +47,10 @@ header {
 
 img {
   display: block;
+  margin: 0 auto;
 }
 
-.button {
+button {
   cursor: pointer;
 }
 
@@ -85,15 +86,18 @@ header {
   line-height: 1.4;
 }
 
-
+.nav {
+  margin-left: 124px;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}
 
 .nav-menu {
   display: flex;
   gap: 40px;
 
   position: relative;
-
-  margin-left: 124px;
 }
 .header {
   display:flex;
@@ -122,6 +126,18 @@ header {
   transform: translate(-200%, -50%) scale(1.5);
 
   opacity: 1;
+}
+
+.list-svg {
+  display: flex;
+  gap: 20px;
+}
+
+header .svg {
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: #ffffff;
 }
 
 /* block html */
@@ -202,19 +218,23 @@ header {
   padding: 15px 20px;
   background-color: rgba(9, 30, 87, 0.5);
   position: absolute;
-  transform: translateY(-110%);
+  transform: translateY(110%);
   transition: transform 200ms; 
 
 
-  top: 15px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
 
-  width: 296px;
-  height: 210px;
+  width: 100%;
+  height: 100%;
 }
 
 .news .item:hover .blue {
   transform: translateY(0);
+}
+
+.news .item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .blue p {
@@ -235,12 +255,66 @@ header {
 
 .hero-title {
   max-width: 636px;
-  margin-bottom: 342px;
+  margin-bottom: 60px;
 
   font-weight: 700;
   font-size: 48px;
   line-height: 1.4;
   color: #FFFFFF;
+}
+
+.hero .svg {
+  display: block;
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+
+.hero .btn {
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: relative;
+
+  border-radius: 50%;
+  border: transparent;
+  background-color: #8D86C9;
+}
+
+.hero .btn::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+
+  transform: scale(1);
+  transition: all 250ms;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+}
+
+.btn:hover::before{
+  transform: scale(1.1);
+
+}
+
+.hero p {
+  max-width: 158px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 202px;
 }
 
 /* hero-buttons */
@@ -262,6 +336,15 @@ header {
   font-weight: 600;
   font-size: 18px;
   text-align: left;
+}
+
+.hero-list .button::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/svg/symbol-defs.svg#icon-icon");
+  background-color: #333333;
 }
 
 .text {
@@ -335,11 +418,6 @@ header {
 }
 
 .top {
-  display: flex;
-  align-items: center;
-
-  position: relative;
-
   margin-bottom: 75px;
 }
 
@@ -381,6 +459,7 @@ header {
 }
 
 .services {
+  position: relative;
   margin-left: 104px;
 }
 
@@ -490,7 +569,7 @@ header {
   font-style: normal;
 }
 
-.trainer-list img {
+.img{
   padding: 0 15px;
   border: 1px solid rgba(247, 236, 225, 1);
 }
@@ -533,3 +612,5 @@ footer{
   opacity: 0.3;
   color: #333333;
 }
+
+
