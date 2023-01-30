@@ -766,6 +766,11 @@ footer{
   margin-bottom: 60px;
 }
 
+.about-container > .title {
+  max-width: 550px;
+  margin-bottom: 40px;
+}
+
 .about-container {
   background-color: #F7ECE1;
   padding: 70px 60px 93px 146px;
