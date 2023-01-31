@@ -901,7 +901,7 @@ footer{
   position: absolute;
   top: 50%;
   left: -30px;
-  transform:translateY(-100%) ;
+  transform:translateY(-50%) ;
   width: 15px;
   height: 3px;
   background-color: var(--accent-color);
