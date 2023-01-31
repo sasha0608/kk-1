@@ -1,3 +1,9 @@
+:root {
+  --accent-color: #8D86C9;
+  --text-color: #333333;
+  --sub-accent: #F7ECE1;
+}
+
 /* reset */
 
 ul {
@@ -120,7 +126,7 @@ header {
   width: 10px;
   height: 10px;
 
-  background-color: #F7ECE1;
+  background-color: var(--sub-accent);
   opacity: 0.2;
 }
 
@@ -171,7 +177,7 @@ header .svg {
 
 .news .item {
   padding: 30px 40px;
-  outline: 1px solid #F7ECE1;
+  outline: 1px solid var(--sub-accent);
   width: 416px;
 }
 .news img{
@@ -200,7 +206,7 @@ header .svg {
   padding: 10px 20px;
   border: none;
 
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.4;
@@ -282,7 +288,7 @@ header .svg {
 
   border-radius: 50%;
   border: transparent;
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
 }
 
 .hero .btn::before {
@@ -334,7 +340,7 @@ header .svg {
   position: relative;
 
 
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
   color: #ffffff;
   font-weight: 600;
   font-size: 18px;
@@ -434,7 +440,7 @@ header .svg {
   font-weight: 700;
   font-size: 36px;
 
-  color: #333333;
+  color: var(--text-color);
 }
 
 .costs {
@@ -452,7 +458,7 @@ header .svg {
   line-height: 1.4;
 
   color: #ffffff;
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
 
   border: none;
 }
@@ -492,7 +498,7 @@ header .svg {
   border: none;
   padding: 0;
 
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
 }
 
 .svg-btn {
@@ -534,12 +540,12 @@ header .svg {
   margin: 0;
   font-weight: 700;
   font-size: 36px;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .photo {
   padding: 30px 25px;
-  border: 1px solid #F7ECE1;
+  border: 1px solid var(--sub-accent);
 }
 
 /* sport */
@@ -574,7 +580,7 @@ header .svg {
   margin-right: auto;
   margin-left: 862px;
 
-  background-color: #F7ECE1;
+  background-color: var(--sub-accent);
 }
 
 .text-container h2 {
@@ -603,7 +609,7 @@ header .svg {
   width: 8px;
   height: 8px;
 
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
 }
 
 .sport-club .item {
@@ -650,7 +656,7 @@ header .svg {
 footer{
   padding: 38px 0;
 
-  background-color: #F7ECE1;
+  background-color: var(--sub-accent);
 }
 .footer {
   display: flex;
@@ -668,7 +674,7 @@ footer{
   display: inline-block;
 }
 .futer-nav-item > .link {
-  color: #333333;
+  color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
 }
@@ -681,14 +687,14 @@ footer{
   font-weight: 500;
   font-size: 14px;
   opacity: 0.3;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .footer .svg{
   display: block;
   width: 36px;
   height: 36px;
-  fill: #8D86C9;
+  fill: var(--accent-color);
 }
 
 .footer .list-svg {
@@ -723,7 +729,7 @@ footer{
   padding: 10px 25px;
   border: transparent;
 
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.4;
@@ -748,7 +754,7 @@ footer{
 
 .border{
   padding: 25px 20px;
-  border: 1px solid #F7ECE1;
+  border: 1px solid var(--sub-accent);
 }
 
 .corts .container {
@@ -772,7 +778,7 @@ footer{
 }
 
 .about-container {
-  background-color: #F7ECE1;
+  background-color: var(--sub-accent);
   padding: 70px 60px 93px 146px;
   position: relative;
   margin-left: 752px;
@@ -800,7 +806,7 @@ footer{
 
   font-weight: 700;
   font-size: 14px;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .about-container li{
@@ -862,14 +868,14 @@ footer{
 }
 
 .violet {
-  color: #8D86C9;
+  color: var(--text-color);
   margin-left: 30px;
 }
 
 .p-title{
   font-weight: 600;
   font-size: 18px;
-  color: #333333;
+  color: var(--text-color);
   margin-bottom: 25px;
 }
 
@@ -898,7 +904,7 @@ footer{
   transform:translateY(-100%) ;
   width: 15px;
   height: 3px;
-  background-color: #8D86C9;
+  background-color: var(--accent-color);
 }
 
 
